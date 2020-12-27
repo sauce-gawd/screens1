@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Selector"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_theme"
+    android:onClick="launchMainActivity2"
+    tools:actionBarNavMode="standard"
+    tools:context=".MainActivity">
+
+
+    <ImageButton
+        android:id="@+id/Preview"
+        android:layout_width="62dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="436dp"
+        android:contentDescription="@string/todo"
+        android:onClick="launchMainActivity2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.744"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_info_details" />
+
+    <ImageButton
+        android:id="@+id/preview"
+        android:layout_width="62dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="316dp"
+        android:contentDescription="@string/todo"
+        android:onClick="launchMainActivity2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.744"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_info_details" />
+
+    <ImageButton
+        android:id="@+id/Purchase"
+        android:layout_width="50dp"
+        android:layout_height="46dp"
+        android:contentDescription="@string/button"
+        android:onClick="launchMainActivity5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.268"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/ic_lock_idle_lock"
+        tools:layout_editor_absoluteY="439dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.17" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pack Chooser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.277"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="105dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
